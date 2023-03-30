@@ -1,0 +1,31 @@
+{
+    "name": "marinar/users_orders",
+    "description": "Users orders",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marin Ivanov",
+            "email": "marin@dev.nddesign.no"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Marinar\\UsersOrders\\": "src/"
+        }
+    },
+
+    "require": {
+        "marinar/users": "*",
+        "marinar/orders": "*"
+    },
+    "extra": {
+        "marinar": {
+            "module": false,
+            "plugin": false,
+            "addon_to": [
+                "marinar/users"
+            ]
+        }
+    }
+}
